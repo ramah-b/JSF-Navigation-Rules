@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14473580623520" configfile="/JSFFaceletsApplication2/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="start-page-1.xhtml" x="239" y="210" id="pf14473585168061" outlinks="pf14473585168062 pf14473585168063 pf14473585168064 pf14473585168065" path="/start-page-1.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="error-message.xhtml" x="600" y="49" id="pf14473585168066" inlinks="pf14473585168062" path="/error-message.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="result-page-1.xhtml" x="708" y="210" id="pf14473585168067" inlinks="pf14473585168063" path="/result-page-1.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="resul-page-2.xhtml" x="768" y="360" id="pf14473585168068" inlinks="pf14473585168064" path="/resul-page-2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="result-page-3.xhtml" x="456" y="432" id="pf14473585168069" inlinks="pf14473585168065" path="/result-page-3.xhtml"/>
+  <links id="pf14473585168062" target="pf14473585168066" source="pf14473585168061" outcome="too-short"/>
+  <links id="pf14473585168063" target="pf14473585168067" source="pf14473585168061" outcome="#{simpleController.doNavigation}"/>
+  <links id="pf14473585168064" target="pf14473585168068" source="pf14473585168061" outcome="page2"/>
+  <links id="pf14473585168065" target="pf14473585168069" source="pf14473585168061" outcome="page3"/>
+</pageflow:Pageflow>
